@@ -1,0 +1,51 @@
+.main{
+  text-align: center;
+  background-color: lightgray;
+  font-family: sans-serif;
+}
+form{
+  max-width:320px;
+  margin:0 auto;
+}
+.btn{
+  margin:4rem 0;
+  padding:1rem 0;
+  font-weight: bold;
+  border:none;
+  width:100%;
+  color:#212121;
+  cursor:pointer;
+}
+.input{
+  border:none;
+  padding:1rem;
+  margin-top:2rem;
+  border-bottom: 0.2rem solid #bdbdbd;
+  outline:none;
+}
+div{
+  display: flex;
+  flex-direction: column-reverse;
+}
+label{
+  padding-left: 1rem;
+  color:blue;
+  transform:rotateY(4.8rem);
+  transform-origin: left top;
+  cursor:text;
+
+}
+.input,.label{
+  transition:0.2 ease-in-out;
+}
+.input:focus,
+.input:not(:placeholder-shown){
+  border-bottom:0.2rem solid #212121;
+}
+
+input:focus ~ label,
+input:not(:placeholder-shown)~label{
+  padding:0;
+  color:#212121;
+  transform:translateY(2rem) scale(0.8);
+}
